@@ -16,6 +16,7 @@ Features of the application:-
 - New post creation 
 - Update and Delete posts
 - Posts list Pagination
+- Routes restrictions using decorators and mixins
 - Check specific user's posts and its count
 - About section
 - Admin panel
