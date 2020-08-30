@@ -1,5 +1,33 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-<h1>Py Blog About!</h1>
+<!-- <h1>About Py Blog</h1> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<article class="media content-section">
+    <!-- <img class="rounded-circle article-img" src=" #" alt="profilePic"> -->
+    <div class="media-body">
+        <!-- <div class="article-metadata">
+            <a class="mr-2" href="#">About!</a>
+            <small class="text-muted">{{ post.date_posted|date:"F d, Y"}}</small>
+        </div> -->
+        <h2><a class="article-title" href="#">About</a></h2>
+        <p class="article-content" style="text-align: justify;">
+            PyBlog is blogging applicaiton. PyBlog was established in August 2020, after a fruitful kickstarter
+            mission to make another stage concentrated exclusively on proficient distributing. Our main goal
+            is to make the best open-source instruments for autonomous columnists and essayists over the
+            world and really affect the eventual fate of online media.
+        </p>
+        <div style="text-align: center; margin-top: 50px;">
+            <div class="article-metadata"></div>
+            <a href="https://github.com/find-aman/django_blog" style="color: black;">
+                <i class="fa fa-github" style="font-size:60px"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/amang9578/" style="color: black; margin-left: 50px;">
+                <i class="fa fa-linkedin" style="font-size:60px"></i>
+            </a>
+
+        </div>
+    </div>
+</article>
 {% endblock %}
