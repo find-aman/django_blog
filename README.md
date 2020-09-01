@@ -5,7 +5,7 @@
 
 *Note:* After opening the application using the above link, some profile images may not be visible, since it is deployed on Heroku and static files storage is not provided there. *But will work if a new user is registered and a new profile image is uploaded.*
 
-Features of the application:-
+**Features of the application:-**
 - Able to view the post from every user on the home page. 
 - User registration
 - User login
@@ -21,7 +21,7 @@ Features of the application:-
 - About section
 - Admin panel
 
-Steps to run the application:-
+**Steps to run the application:-**
 *Assumption python 3  is installed properly*
 1. Clone this repository.
 2. Open the folder created and open cmd in it.
@@ -30,15 +30,16 @@ Steps to run the application:-
 5. Activate the virtual environment by `venv\Scripts\activate`
 6. Install all the packages from requirments.txt file by `pip install -r requirements.txt`
 7. Now create some User Environment Variables with names like.
-	- **EMAIL_USER** (set value to an email address from which password reset mail will be sent).
+	- **EMAIL_USER** (set value to an gmail email address from which password reset mail will be sent).
 	- **EMAIL_PASS** (set value to the password of above email id)
 	- **DEBUG_VALUE**(set value True for testing)
-	- **SECRET_KEY**(set value to a newly generated secret key using *secrets* module in python)
+	- **SECRET_KEY**(set value to a newly generated secret key using *secrets* module in python using `token_hex(24)`)
+	- Make sure that email address should be of *Gmail* only for sending passsword reset email and "Login using less secure apps" function is enabled in the email id.
 8. Make migrations by `python manage.py migrate`
-9. Create a superuser to admin testing by `python manage.py createsuperuser`
+9. Create a superuser to admin testing by `python manage.py createsuperuser` and enter the details asked.
 10. Then run the server by `python manage.py runserver` 
 
-Testing of Features:-
+**Testing of Features:-**
 - Click on **Register** on the home page to create a new account.
 -  Enter valid **Username**, **Email**, **Password** *(Enter correct email to check password reset functionality)*
 - Click **Sign Up**, will be redirected to **Log In** page.
